@@ -20,7 +20,7 @@
     </ul>
     <ol>
     <h3>Utiliza&ccedil;&atilde;o do GIT Bash</h3>
-        <li>GIT ADD index.html</li> (Adi&ccedil;&atilde;o de html para ser monitorado pelo git)
+        <li>GIT ADD "ITEM"</li> (Adi&ccedil;&atilde;o de html ou reposit&oacute;rio para ser monitorado pelo git)
         <li>GIT STATUS</li> (Exibe as condi&ccedil;&otilde;es do diret&oacute;rio de trabalho e da &aacute;rea de staging)
         <li>GIT LOG</li> (Informar&aacute; hash do commit)
         <li>GIT CONFIG --LOCAL</li> (Alteração de configura&ccedil;&atilde;o para cada projeto)
@@ -28,9 +28,25 @@
         <li>GIT LOG --ONELINE</li> (Visualiza&ccedil;&atilde;o de todos os commits em uma &uacute;nica linha)
         <li>GIT LOG -P</li> (Menos informa&ccedil;&atilde;o ainda de log)
         <li>GIT LOG --PRETTY="FORMAT:%H"</li> (traz o hash resumido seguido pela mensagem do commit)
+        <li>GIT INIT</li> (Inicio de registro de reposit&oacute;rio)
+        <li>GIT INIT --BARE</li> (Indica que é reposit&oacute;rio puro, cont&eacute;m apenas as altera&ccedil;&otilde;es dos arquivos, e n&atilde;o uma c&oacute;pia f&iacute;sica de cada um dos arquivos).
+        <li>GIT REMOTE</li> (Lista todos os reposit&oacute;rios locais)
+        <li>GIT REMOTE ADD LOCAL "CAMINHO"</li> (Adiciona o seu repositório para a listagem, com nome de local)
+        <li>GIT PUSH LOCAL MASTER</li> (Envia todas as altera&ccedil;&otilde;es que fizemos, para o reposit&oacute;rio "LOCAL")
+        <li>GIT PULL LOCAL MASTER</li> (Puxa todas as altera&ccedil;&otilde;es que est&atilde;o no reposit&oacute;rio "LOCAL")
+        <li>GIT COMMIT -M "TEXTO"</li> (Realiza o Commit de todas as altera&ccedil;&otilde;es realizadas)
+        <li>GIT BRANCH</li> (Visualiza todos as "&aacute;reas de trabalho" do projeto)
+        <li>GIT BRANCH TITULO</li> (Cria uma &aacute;rea de trabalho chamada "TITULO")
+        <li>GIT CHECKOUT TITULO</li> (Altera sua &aacute;rea de trabalho Master, para Titulo)
+        <li>GIT CHECKOUT -B TITULO</li> (Cria e Altera sua &aacute;rea de trabalho Master, cria a Titulo e muda para ela)
+        <li>GIT MERGE TITULO</li> (Realiza o Commit, juntando a &aacute;rea de Trabalho, Master com Titulo)
     </ol>
+    <h3>Obs:</h3>
+    GIT INIT SEMPRE UTILIZADO DENTRO DA PASTA COM O ITEM QUE VOC&Ecirc; DESEJA INICIAR O MONITORAMENTO<P>
     <h2>Exemplos:</h2>
+    GIT ADD INDEX.HTML <p>
     GIT CONFIG --LOCAL USER.NAME "BRIAN EVANOVICK"<p>
-    GIT CONFIG --LOCAL USER.EMAIL "BRIAN-XAVIER@HOTMAIL.COM"
+    GIT CONFIG --LOCAL USER.EMAIL "BRIAN-XAVIER@HOTMAIL.COM"<p>
+    GIT REMOTE ADD LOCAL C:/USERS/BRIAN.SANTOS/DOWNLOADS/DOCUMENTOS_BRIAN/ALURA/SERVIDOR/
 </body>
 </html>
